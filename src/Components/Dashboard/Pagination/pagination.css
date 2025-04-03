@@ -1,0 +1,15 @@
+.custom-pagination {
+  list-style-type: none;
+}
+.pagination-tag-anchor {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  transition: 0.3s;
+}
+
+.pagination-tag-anchor:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

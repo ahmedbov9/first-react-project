@@ -1,0 +1,75 @@
+.form {
+  background-image: linear-gradient(
+      110deg,
+      white 0%,
+      white 50%,
+      transparent 50%
+    ),
+    url("../../../../from.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.custom-form {
+  width: 50%;
+}
+.form-custom {
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-custom label,
+.form-custom input {
+  display: block;
+}
+.form-custom input {
+  padding: 20px 20px;
+  outline: none;
+  border-radius: 3px;
+  border: 0;
+  background: white;
+  width: 80%;
+  border-bottom: 3px solid transparent;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 0 10px rgb(153, 152, 152) inset;
+  transition: 0.3s;
+}
+.form-custom input:focus {
+  box-shadow: 0 0 10px rgb(153, 152, 152) inset;
+}
+.form-custom input:focus:valid {
+  border-bottom: 3px solid green;
+}
+.form-custom input:focus:not(:valid) {
+  border-bottom: 3px solid orangered;
+}
+.form-custom input:placeholder-shown + label {
+  opacity: 0;
+  visibility: hidden;
+  top: 20px;
+}
+.form-custom label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 13px;
+  color: gray;
+  font-weight: bold;
+  transition: 0.3s;
+}
+@media (max-width: 992px) {
+  .form {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.8) 100%
+      ),
+      url("../../../../from.jpg");
+  }
+  .custom-form {
+    width: 100%;
+  }
+}

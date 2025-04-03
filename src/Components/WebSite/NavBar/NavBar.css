@@ -1,0 +1,18 @@
+.category-title {
+  transition: 0.2s;
+}
+.category-title:hover {
+  color: rgb(85, 85, 245) !important;
+}
+.icon {
+  -webkit-user-drag: none;
+}
+
+.custom-search {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.custom-search:focus {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1) !important;
+  border: rgba(0, 0, 0, 0.1) !important;
+  outline: rgba(0, 0, 0, 0.1) !important;
+}
