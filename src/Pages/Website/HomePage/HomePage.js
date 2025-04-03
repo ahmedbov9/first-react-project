@@ -8,7 +8,7 @@ import Footer from "../../../Components/Footer";
 export default function HomePage() {
   return (
     <div>
-      {/* <Landing /> */}
+      <Landing />
       <LastSales />
       <Container>
         <div
